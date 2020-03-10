@@ -1,0 +1,186 @@
+/* pages/index/index.wxss */
+/* logo头部样式 */
+#header {
+  /* background-color: rgb(14, 155, 211); */
+  /* background-color:#fff; */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 300rpx;
+  position: relative;
+}
+swiper {
+  height: 200rpx;
+  width: 900rpx;
+  position: absolute;
+  left: -39px;
+  top:35px;
+
+}
+.search{  
+      width: 80%;  
+    }  
+    .search_arr {  
+      border: 1px solid #d0d0d0;  
+      border-radius: 10rpx;  
+      margin-left: 20rpx;  
+    }  
+    .search_arr input{  
+      margin-left: 60rpx;  
+      height: 60rpx;  
+      border-radius: 5px;  
+    }  
+    .bc_text {  
+      line-height: 68rpx;  
+      height: 68rpx;  
+      margin-top: 34rpx;  
+    }  
+      
+    .sousuo {  
+      margin-left: 15rpx;  
+      width: 15%;  
+      line-height: 100%;  
+      text-align: center;  
+      border: 1px solid #d0d0d0;  
+      border-radius: 10rpx;  
+      
+      height: 40rpx;
+    }  
+    .page_row{  
+      display: flex;  
+      flex-direction: row ;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 700rpx;
+      height: 40rpx;
+      margin-left: 20rpx;
+    }  
+    .searchcion {  
+      margin: 10rpx 10rpx 10rpx 10rpx;  
+      position: absolute;  
+      left:25rpx;  
+       
+      width: 20rpx;  
+      height: 20rpx;  
+      text-align: center;  
+      font-size: 16px;
+    }  
+
+#header .lunbotu .img {
+  width: 900rpx;
+  height: 300rpx;
+
+
+  
+}
+#header .image {
+  flex: 1;
+ 
+
+}
+#header .image image {
+  width: 122rpx;
+  height: 122rpx;
+}
+#header .text {
+  flex: 2;
+  font-size: 18px;
+  color: white;
+
+}
+#header .text .title {
+  width: 50%;
+  line-height: 18px;
+  padding-bottom: 10px;
+}
+#header .text .intro {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+/* 餐品信息 */
+#content {
+  display: flex;
+}
+#content .scroll {
+  flex: 2;
+}
+#content .scroll .item {
+  display: flex;
+  position: relative;
+}
+#content .scroll .item .product-img {
+  flex: 1;
+
+}
+#content .scroll .item .product-img image {
+  width: 100%;
+  height: 100%;
+}
+#content .scroll .item .product-info {
+  flex: 2;
+}
+#content .scroll .item .product-info .product-saled {
+   font-size: 12px;
+   color: gray;
+}
+#content .scroll .item .product-info .product-price {
+  color: red;
+}
+#content .scroll .item .operate {
+  position: absolute;
+  right: 40rpx;
+  bottom: 0;
+  height: 50rpx;
+  width: 150rpx;
+  text-align: center;
+  line-height: 50rpx;
+
+}
+#content .scroll .item .operate .minus, #content .scroll .item .operate .plus {
+  color: red;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  line-height: 45rpx;
+  box-sizing: border-box;
+}
+#content .scroll .item .operate .number {
+  width: 50px;
+  float: left;
+  box-sizing: border-box;
+}
+#content .scroll .item .operate .minus {
+  float: left;
+  width: 50rpx;
+  height: 50rpx;
+  box-sizing: border-box;
+}
+#content .scroll .item .operate .plus {
+  float: right;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+/* 底部样式 */
+#footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  text-align:center;
+  color: white;
+
+}
+#footer view {
+  flex: 3;
+  background-color: #484D54;
+}
+#footer .ok {
+  flex: 2;
+  background-color: #FE2947;
+}

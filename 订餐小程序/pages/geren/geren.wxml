@@ -1,0 +1,38 @@
+<!--pages/geren/geren.wxml-->
+
+<view id="geren">
+
+<view class="ge">
+<image src="../mp.png"></image>
+<view class="yuye">北分</view>
+<view class="beijin">156****8673</view>
+</view>
+
+<navigator url="/pages/zhinan/zhinan" open-type='navigateTo' class="zhinan">
+<image class="zheng" src="../icons/tag.png"></image>
+<view class="wenzi">指南针</view>
+</navigator>
+
+<button type="primary" bindtap="signin" class="daka">
+<image class="daka1" src="../icons/card_bag.png"></image>
+<view class="daka2">打卡</view>
+</button>
+
+
+<!-- 收货地址 -->
+< navigator url="/page/mingxinpian/mingxinpian" open-type='navigateTo' class="xingpain">
+<image class="xingpain1" src="../icons/mp.png"></image>
+<view class="xingpain2">收货地址</view>
+</navigator>
+
+
+
+
+<view class="shezhi" >
+<image class="shezhi1" src="../icons/menu_settings.png"></image>
+<view class="shezhi2">设置</view>
+
+
+
+</view>
+</view>

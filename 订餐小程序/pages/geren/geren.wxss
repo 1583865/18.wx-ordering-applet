@@ -1,0 +1,128 @@
+/* pages/geren/geren.wxss */
+
+#geren {
+  width: 400px;
+  height: 600px;
+  background-color: #ccc;
+}
+ .ge {
+  width: 700rpx;
+  height: 240rpx;
+  background-color: rgba(10, 115, 163, 0.884);
+  box-sizing: border-box;
+   position: relative;
+   top: 12px;
+   left: 12px;
+}
+
+.ge .yuye {
+  position: absolute;
+  left: 82px;
+  top: 24px;
+  font-size: 24px;
+}
+.ge .beijin{
+  position: absolute;
+  top: 60px;
+  left: 82px;
+  color: #ccc;
+  font-size: 16px;
+}
+image {
+  width: 60px;
+  height: 60px;
+  margin-top: 40rpx;
+  
+}
+
+
+/* 指南针 */
+.zhinan {
+  width: 700rpx;
+  height: 100rpx;
+  background-color: white;
+  position: absolute;
+  top: 164px;
+  left: 11px;
+} 
+.zheng {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 10rpx;
+}
+.wenzi {
+  float: right;
+  margin-right: 500rpx;
+  margin-top: 20rpx;
+  font-size: 16px;
+}
+
+
+
+
+
+/* 打卡 */
+.daka {
+  width: 700rpx;
+  height: 100rpx;
+  background-color: white;
+  position: absolute;
+  top: 215px;
+  left: 11px;
+} 
+.daka1 {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 10rpx;
+}
+.daka2 {
+  float: right;
+  margin-right:530rpx;
+  margin-top: 20rpx;
+  font-size: 16px;
+}
+
+
+
+/* 明星片 */
+.xingpain {
+  width: 700rpx;
+  height: 100rpx;
+  background-color: white;
+  position: absolute;
+  top: 266px;
+  left: 11px;
+} 
+.xingpain1 {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 10rpx;
+}
+.xingpain2 {
+  float: right;
+  margin-right: 500rpx;
+  margin-top: 20rpx;
+  font-size: 16px;
+}
+
+
+/* 设置 */
+.shezhi {
+  width: 700rpx;
+  height: 100rpx;
+  background-color: white;
+  position: absolute;
+  top: 348px;
+  left: 11px;
+} 
+.shezhi1 {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 10rpx;
+}
+.shezhi2 {
+  float: right;
+  margin-right: 540rpx;
+  margin-top: 20rpx;
+  font-size: 16px;
+}

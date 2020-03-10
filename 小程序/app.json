@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/geren/geren",
+    
+    "pages/chengshi/chengshi",
+    "pages/dingdan/dingdan"
+   
+  
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#32ac13",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icons/首页2.jpg",
+      "selectedIconPath": "icons/首页.jpg"
+    },
+    {
+      "pagePath": "pages/dingdan/dingdan",
+      "text": "订单",
+      "iconPath": "icons/dingdan1.jpg",
+      "selectedIconPath": "icons/dingdan2.jpg"
+    },
+    {
+      "pagePath": "pages/geren/geren",
+      "text": "我的",
+      "iconPath": "icons/friends_normal.png",
+      "selectedIconPath": "icons/friends_active.png"
+    }
+    ]
+  }
+}

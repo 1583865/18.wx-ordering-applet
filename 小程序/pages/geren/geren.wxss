@@ -1,0 +1,94 @@
+/* pages/geren/geren.wxss */
+
+#header {
+  width: 800rpx;
+  height: 400rpx;
+  background-color: #FFD656;
+  position: relative;
+}
+#header .touxiang {
+  width: 160rpx;
+  height: 160rpx;
+  border: 1px solid #999;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 81rpx;
+  left: 253rpx;
+}
+#header .touxiang .tu {
+  width: 160rpx;
+  height: 160rpx;
+}
+#header .shuju {
+  color: #fff;
+  position: absolute;
+  top: 270rpx;
+  left: 298rpx;
+
+}
+
+
+/* 按钮事件 */
+#btn {
+  width: 800rpx;
+  height: 50rpx;
+  position: relative;
+  padding-top: 20rpx;
+}
+#btn .btn1 text{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #000;
+}
+
+/* 美团红包 */
+.zhinan {
+  width: 700rpx;
+  height: 100rpx;
+  background-color: #eee;
+  position: absolute;
+  top: 5rpx;
+  left: 11rpx;
+} 
+
+.wenzi {
+  float: right;
+  margin-right: 541rpx;
+  margin-top: 20rpx;
+  font-size: 16px;
+}
+
+
+.zhinan1 {
+  width: 700rpx;
+  height: 100rpx;
+  background-color: #eee;
+  position: absolute;
+  top: 217rpx;
+  left: 11rpx;
+} 
+
+.wenzi1 {
+  float: right;
+  margin-right: 541rpx;
+  margin-top: 20rpx;
+  font-size: 16px;
+}
+
+.zhinan2 {
+  width: 700rpx;
+  height: 100rpx;
+  background-color: #eee;
+  position: absolute;
+  top: 110rpx;
+  left: 11rpx;
+} 
+
+.wenzi2 {
+  float: right;
+  margin-right: 541rpx;
+  margin-top: 20rpx;
+  font-size: 16px;
+}

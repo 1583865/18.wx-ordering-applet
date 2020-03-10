@@ -1,0 +1,113 @@
+<!--pages/index/index.wxml-->
+
+<view id="header">
+<view class='page_row' bindtap="suo">  
+      <view class="search">  
+        <view class="df search_arr">  
+          <icon class="searchcion" size='20' type='search'></icon>  
+          <input class=""  placeholder="请输入关键字" value="{{searchValue}}"/>  
+        </view>  
+      </view>  
+      <view class='sousuo'>搜索</view>  
+    </view>
+
+
+
+
+
+<!-- logo页面 -->
+<view class="image">
+<image src="https://localhost:3001/login.png"></image>
+</view>
+
+
+<swiper indicator-active-color='red' class="lunbotu" indicator-color='blue' indicator-dots='ture'
+autoplay='-1'
+interval='3000'
+>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/4/48/37fce9a4ffbec79293357f68ecfcbjpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/1/9c/d8da44b63fa1208476992df88edc9jpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/b/98/14504937e9cfbd304e1d667cc737bjpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/1/9c/d8da44b63fa1208476992df88edc9jpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/4/48/37fce9a4ffbec79293357f68ecfcbjpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/4/48/37fce9a4ffbec79293357f68ecfcbjpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+</swiper>
+
+
+
+
+<!-- 送餐信息页面
+<view class="text">
+<view class="title">订餐信息提示</view>
+<view class="intro">起送15￥|配送5￥|起送30分钟</view>
+</view> -->
+
+</view>
+
+
+<!-- 餐品信息栏 -->
+<view id="content">
+
+
+<!-- 左侧信息 -->
+<view class="menu">
+<view wx:for="{{list}}" bindtap="chooseCategory" data-target="ickt{{item.id}}" style="height:{{height / lis.length}}px; line-height:{{height / list.length}}px" wx:key="{{this}}">{{item.text}}</view>
+</view>
+
+<!-- 右侧滚动信息 -->
+<scroll-view class="scroll" style="height:{{height}}px" scroll-y scroll-into-view="{{target}}">
+
+
+<!-- 每个分类区域 -->
+ <view id="ickt{{value.id}}" wx:for="{{list}}" wx:key="{{this}}" wx:for-item="value">
+
+
+<!-- 每个分类具体单品 -->
+<view class="item" wx:for="{{value.data}}" wx:key="{{this}}">
+<view class="product-img">
+<image src="https://localhost:3001/item/{{item.img}}"></image>
+</view>
+<view class="product-info">
+<view class="product-name">{{item.title}}</view>
+<view class="product-saled">已售{{item.sales}}份</view>
+<view class="product-price">￥{{item.price}}</view>
+</view>
+
+
+<!-- 加或减 -->
+<view class="operate">
+<block wx:if="{{item.num}}">
+<view catchtap="minus" data-category="{{value.id}}" data-productid="{{item.id}}" class="minus">-</view>
+<view class="number">{{item.num}}</view>
+</block>
+<view catchtap='plus' data-category="{{value.id}}" data-productid="{{item.id}}" class=""plus>+</view>
+</view>
+</view>
+</view>
+</scroll-view>
+</view>
+
+
+
+<view id="footer">
+<view>共{{amount}}元</view>
+<view class="ok" catchtap='ok'>已选好</view>
+</view>

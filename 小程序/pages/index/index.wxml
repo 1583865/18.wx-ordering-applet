@@ -1,0 +1,155 @@
+<!-- pages/index/index.wxml -->
+<view id="header">
+   <view>
+   <image src="/icons/weizhi2.jpg" class="dizhi"></image>
+   <navigator class="tiao" url='/pages/chengshi/chengshi' open-type='navigateTo'>1</navigator>
+  
+   </view>
+    <text>{{chooseCity}}</text>
+
+   <view class="sousuo">
+       <icon class="searchcion" size='20' type='search'></icon>
+       <input class="" placeholder='请输入'></input>
+   </view>
+    
+</view>
+
+
+<view id="tu">
+<swiper indicator-active-color='red' class="lunbotu" indicator-color='blue' indicator-dots='ture'
+autoplay='-1'
+interval='3000'
+>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/4/48/37fce9a4ffbec79293357f68ecfcbjpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/1/9c/d8da44b63fa1208476992df88edc9jpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/b/98/14504937e9cfbd304e1d667cc737bjpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/1/9c/d8da44b63fa1208476992df88edc9jpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/4/48/37fce9a4ffbec79293357f68ecfcbjpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+<swiper-item>
+    <image class="img" src="https://fuss10.elemecdn.com/4/48/37fce9a4ffbec79293357f68ecfcbjpeg.jpeg?imageMogr/format/webp/thumbnail/568x/">
+    </image>
+</swiper-item>
+</swiper>
+</view>
+
+
+
+ <!-- banner -->
+<view id="banner">
+
+<view><image   class="imga"src="http://p1.meituan.net/jungle/8b5e1702d4145ccf058ba5fb31008c5310912.png"></image>
+<text class="no1">美食</text>
+</view>
+
+
+<view><image   class="imga2"src="http://p0.meituan.net/jungle/45ff2f098a20a77122bff8385192f0ec10547.png"></image>
+<text class="no2">超市</text>
+</view>
+
+<view><image   class="imga3"src="http://p1.meituan.net/jungle/da9181f93dd2e11c5d74cf685470408f10016.png"></image>
+<text class="no3">专送商品</text>
+</view>
+
+<view><image   class="imga4"src="http://p1.meituan.net/jungle/8b635825ef28dd85f3d3f070de4e64ed9366.png"></image>
+<text class="no4">晚餐优选</text>
+</view>
+
+<view><image   class="imga5"src="http://p1.meituan.net/jungle/12a9834827909fa55f54bce96e67470711250.png"></image>
+<text class="no5">生鲜果蔬</text>
+</view>
+
+<view><image   class="imga6"src="http://p1.meituan.net/jungle/e54f1fe77b0588d2dfe82a12e424108a9450.png"></image>
+<text class="no6">甜点饮品</text>
+</view>
+
+<view><image   class="imga7"src="http://p0.meituan.net/jungle/2ec76f8f4f21a4ec163adc7fccfa1a399428.png"></image>
+<text class="no7">小吃馆</text>
+</view>
+
+<view><image   class="imga8"src="http://p0.meituan.net/jungle/2eee7747fd143249b100b9fa5ee5e31d9873.png"></image>
+<text class="no8">加常菜</text>
+</view>
+
+<view><image   class="imga9"src="http://p1.meituan.net/jungle/dfd03fd91f640682c16179ba85837f739679.png"></image>
+<text class="no9">鲜花蛋糕</text>
+</view>
+
+<view><image   class="imga10"src="http://p1.meituan.net/jungle/99fb0a3687a7ad570d015ec081ff396a9989.png"></image>
+<text class="no10">品牌连锁</text>
+</view> 
+</view>
+   
+
+ 
+
+<view class="banner1">
+   <swiper indicator-dots='true' autoplay='true' style="height:100%;" interval="{{3000}}">
+   <block wx:for="{{imgUrls}}">
+   <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="aspectFill"></image>
+   </swiper-item>
+   </block>
+
+    </swiper>
+</view> 
+
+
+<!-- 排序 -->
+ <view class="menu">
+ <picker bindchange="foodTypeChange" value="{{0}}" range="{{foodTypes}}">
+ <view class="menu-select1">
+   当前选择： {{foodTypes[foodTypesIndex]}}
+ </view>
+ </picker>
+ <picker bindchange='ranTypeChange' value="0" range="{{rankTypes}}">
+ <view class="menu-select2">排序:{{rankTypes[rankTypesIndex]}}</view>
+ </picker>
+ </view>
+
+ <!-- 商品信息 -->
+ <scroll-view scroll-y="{{true}}" class="foodList">
+   <view class="food-item">
+   <block wx:for="{{foodList}}">
+   <view class="food-item-l">
+   <view class="food-item-img">
+   <image src="{{item.icon}}" mode='aspectFill'></image>
+   <view class="food-item_name">{{item.title}}</view>
+   </view>
+
+   <view class="food-item_handle">
+     <view class="order" data-index="{{index}}" bindtap="addToCart">+</view>
+     <view class="orderedNum">{{item?item.num: 0}}</view>
+     <view class="cancel" data-index ="{{index}}" bindtap="reduceFromCart">-</view>
+     <view class="food-item_price">￥{{item.cost}}</view>
+     </view>
+     </view>
+     </block>
+     </view>
+ </scroll-view>
+
+
+ <!-- 提交订单 -->
+ <view class="order-view">
+   <view class="order-number">
+      <image mode="scaleToFill" src="/icons/gouwuche.jpg"></image>
+      <text class="order-num-txt">{{orderNum}}</text>
+      <text class="order-totalCost">￥{{orderCost}}</text>
+   </view>
+   <view class="order-bt" bindtap="sublimitClick"><button  catchtap='ok'>提交订单</button>
+   </view>
+ </view>

@@ -1,0 +1,324 @@
+/* pages/index/index.wxss */
+#header {
+  background: #000;
+  position: relative;
+  width: 900rpx;
+  height: 150rpx;
+}
+#header .dizhi {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top:48rpx;
+  left: 18rpx;
+}
+
+#header .sousuo {
+  width: 460rpx;
+  height: 100rpx;
+  background-color: #fff;
+  position: absolute;
+  top: 26rpx;
+  left: 274rpx;
+  border-radius: 40rpx;
+}
+#header .tiao {
+  color: #fff;
+  position: relative;
+  top: 48rpx;
+  left: 34rpx;
+}
+#header text{
+  color: #fff;
+  position: absolute;
+  left: 79rpx;
+  top: 50rpx;
+
+}
+#header .sousuo icon {
+  position: absolute;
+  top: 37rpx;
+}
+#header .sousuo input {
+  position: absolute;
+  top: 25rpx;
+  left: 68rpx;
+}
+
+
+#tu .lunbotu .img {
+  width: 900rpx;
+  height: 300rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+
+
+
+#banner {
+  margin-top: 10rpx;
+  width: 900rpx;
+  height: 300rpx;
+  border: 1px solid #999; 
+  position: relative;
+}
+#banner .imga {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 16rpx;
+  top: 0rpx;
+}
+#banner .no1 {
+  position: absolute;
+  top: 88rpx;
+  left: 17rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+#banner .imga2 {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 1rpx;
+  left: 158rpx;
+}
+#banner .no2 {
+  position: absolute;
+  top: 88rpx;
+  left: 172rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+#banner .imga3 {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 1rpx;
+  left: 312rpx;
+}
+#banner .no3 {
+  position: absolute;
+  top: 88rpx;
+  left: 300rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+#banner .imga4 {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 1rpx;
+  left: 466rpx;
+}
+#banner .no4 {
+  position: absolute;
+  top: 88rpx;
+  left: 446rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+#banner .imga5 {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 5rpx;
+  left: 615rpx;
+}
+#banner .no5 {
+  position: absolute;
+  top: 88rpx;
+  left: 599rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+#banner .imga6 {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 160rpx;
+  left: 17rpx;
+}
+#banner .no6 {
+  position: absolute;
+  top: 248rpx;
+  left: 0rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+#banner .imga7 {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 162rpx;
+  left: 158rpx;
+}
+#banner .no7 {
+  position: absolute;
+  top: 241rpx;
+  left: 146rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+#banner .imga8 {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 156rpx;
+  left: 312rpx;
+}
+#banner .no8 {
+  position: absolute;
+  top: 238rpx;
+  left: 305rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+#banner .imga9 {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 151rpx;
+  left: 466rpx;
+}
+#banner .no9 {
+  position: absolute;
+  top: 236rpx;
+  left: 442rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+#banner .imga10 {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 151rpx;
+  left: 615rpx;
+}
+#banner .no10 {
+  position: absolute;
+  top: 240rpx;
+  left: 598rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+}
+
+
+/* 排序 */
+.menu {
+ 
+  width: 900rpx;
+  height: 50rpx;
+  border: 1px solid #999;
+  position: relative; 
+}
+.menu-select1 {
+  position: absolute;
+  top: -3rpx;
+  left: 0rpx;
+}
+.menu-select2 {
+  position: absolute;
+  top: 2rpx;
+  left: 463rpx;
+}
+
+
+.foodList {
+  height: 58vh;
+  background: #ccc;
+  width: 100%
+}
+.food-item {
+  display: flex;
+  flex-direction: row;
+  margin: 15rpx 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+.food-item-l {
+  flex: 1 1 auto;
+  margin: 10rpx 20rpx;
+  width: 40%;
+}
+.food-item image {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.food-item_handle {
+  position: relative;
+}
+.food-item_handle .orderedNum {
+  position: absolute;
+  left: 40rpx;
+  top: 4rpx;
+ 
+}
+.food-item_handle .cancel {
+  position: absolute;
+  top: 2rpx;
+  left: 80rpx;
+
+  
+}
+.food-item_handle .food-item_price {
+  position: absolute;
+  left: 240rpx;
+  top: 0rpx;
+}
+
+.food-item-img {
+  position:relative;
+  width: 100%;
+  height: 28vh;
+  background-color: #fff;
+
+}
+
+.food-item_name {
+  font-size: 22px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+}
+
+
+
+
+/* 提交订单 */
+.order-view {
+  position: relative;
+  width: 800rpx;
+  height: 100rpx;
+   background-color: #999;
+  
+}
+.order-view .order-number image {
+  width: 60rpx;
+  height: 60rpx;
+  padding-top: 30rpx;
+}
+.order-view .order-bt {
+    border: 1px solid #999;
+    position: absolute;
+    top: 11rpx;
+    left: 505rpx;
+    background-color: red;
+    color: #fff;
+    width: 214rpx;
+    height: 80rpx;
+    font-size: center;
+   
+}
+.order-view .order-bt button {
+  background-color: red;
+  color: #fff;
+ 
+}

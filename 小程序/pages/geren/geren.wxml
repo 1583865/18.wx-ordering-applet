@@ -1,0 +1,29 @@
+<!--pages/geren/geren.wxml-->
+<!-- header -->
+<view  id="header">
+   <view class="touxiang"><image class="tu" src="{{img}}"></image></view>
+   <view class="shuju">
+   <text>{{xinxi}}</text></view>
+</view>
+
+<!-- 按钮事件 -->
+<view id="btn">
+<navigator  open-type='navigateTo' class="zhinan">
+
+<view class="wenzi">美团红包</view>
+</navigator>
+
+<navigator  open-type='navigateTo' class="zhinan1">
+
+<view class="wenzi1">收货地址</view>
+</navigator>
+
+<navigator  open-type='navigateTo' class="zhinan2">
+
+<view class="wenzi2">常见问题</view>
+</navigator>
+
+
+
+</view>
+

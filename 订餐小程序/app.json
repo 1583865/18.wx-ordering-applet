@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/geren/geren",
+    
+    "pages/deliver/deliver",
+    
+    "pages/zhinan/zhinan",
+    "page/mingxinpian/mingxinpian",
+    "pages/edit/edit",
+    "pages/dingdan/dingdan"
+    
+    
+    
+    
+    
+   
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#35ab23",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "订餐页面",
+    "backgroundColor": "#32ac13",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "外卖",
+      "iconPath": "icons/discovery_normal.png",
+      "selectedIconPath": "icons/discovery_active.png"
+    },
+    {
+      "pagePath": "pages/dingdan/dingdan",
+      "text": "订单",
+      "iconPath": "icons/message_normal.png",
+      "selectedIconPath": "icons/message_active.png"
+    },
+    {
+      "pagePath": "pages/geren/geren",
+      "text": "我的",
+      "iconPath": "icons/person_normal.png",
+      "selectedIconPath": "icons/person_active.png"
+    }
+    ]
+  }
+}
